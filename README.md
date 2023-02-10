@@ -1,4 +1,4 @@
-# excel-challenge: Charting Crowdfunding
+# Charting Crowdfunding
 
 ## Background
 
@@ -6,39 +6,17 @@ Crowdfunding platforms like Kickstarter and Indiegogo have been growing in succe
 
 Getting funded on a crowdfunding website requires meeting or exceeding the project's initial goal, so many organizations spend months looking through past projects in an attempt to discover some trick for finding success. For this week's homework, you will organize and analyze a database of 1,000 generated sample projects in order to uncover any hidden trends.
 
-### Before You Begin
+## Analysis
 
-1. Create a new space for this project called `excel-challenge` in either DropBox or Google Drive. **Do not add this homework to an existing space**.
+In this analysis, we coded all outcomes by color depending on whether they were successful, failed, canceled, or is currently live. We also generated a 
+"percent funded" column which we enhanced with a three color scale which starts at dark red, transitioning to green at 100% and blue at 200%.
 
-2. Store your Excel workbooks here in this new space, and create a sharable link for submission.
+We also generated an "average donation" column as well as specific columns denoting the parent category and subcategory for each crowdfunding attempt.
 
-## Instructions
+For analysis, we generated a pivot table to analyze how many campaings were were successful, failed, canceled, or are currently live, as well as a stacked column pivot chart to filter by country.
 
-![Crowdfunding Table](Images/FullTable.PNG)
-
-Using the Excel [workbook](CrowdfundingBook.xlsx) provided, modify and analyze the data of 1,000 example projects in an attempt to uncover market trends. 
-
-* Dataset created by Trilogy Education Services, LLC.
-
-
-* Use conditional formatting to fill each cell in the `outcome` column with a different color, depending on whether the associated campaign was successful, failed, canceled, or is currently live.
-
-  * Create a new column called `Percent Funded` that uses a formula to uncover how much money a campaign made relative to its initial goal.
-
-* Use conditional formatting to fill each cell in the `Percent Funded` column according to a three-color scale. The scale should start at 0 and be a dark shade of red, transitioning to green at 100, and blue at 200.
-
-
-  * Create a new column called `Average Donation` that uses a formula to uncover how much each project backer paid on average.
-
-  * Create two new columns, one called `Parent Category` and another called `Sub-Category`, that use formulas to split the `Category and Sub-Category` column into the two new, separate columns.
-
-  ![Category Stats](Images/CategoryStats.PNG)
-
-  * Create a new sheet with a pivot table that will analyze your initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category**.
-
-  * Create a stacked column pivot chart that can be filtered by country based on the table you have created.
-
-  ![Subcategory Stats](Images/SubcategoryStats.PNG)
+We then generated a pivot table to analyze outcome data based on subcategory, and created a stacked column pivot chart that can be filtered by country and
+parent category.
 
   * Create a new sheet with a pivot table that will analyze your initial sheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category**.
 
